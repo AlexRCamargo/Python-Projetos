@@ -7,7 +7,7 @@ def mensagem():
 #Função para cálculo do fatorial de um número:
 def fatorial(numero):
     if numero < 0:
-        return 'Digite um valor maior ou igial a zero'
+        return 'Digite um valor maior ou igual a zero'
     else:
         if numero==0 or numero==1:
             return 1

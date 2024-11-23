@@ -8,12 +8,16 @@ nota4 = float(input('Digite a nota do 4º Bimestre: '))
 media = (nota1 + nota2 + nota3 + nota4) / 4
 
 # Exibição da média
-print('A média final é: ', media)
+print('A média final é: ',media)
 
 # verificação se o aluno está aprovado, reprovado ou de exame
 if(media>=6):
     print('Você está Aprovado!!!')
+    print('Parabéns!!!')
 elif(media<5):
     print('Você está Reprovado!')
 else:
     print('Você está de Exame.')
+    print('Comece a estudar já! Boa sorte!!!')
+
+print('A sua média é {}'.format(media))  
