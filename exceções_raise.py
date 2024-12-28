@@ -6,7 +6,7 @@ class NumeroNegativoError(Exception):
              # Usado quando estiver criando uma base de código, que num determinado momento exato, 
              # não será preenchido o código do bloco, mas é necessário testar a aplicação sem erros 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     try:
         num = int(input('Digite um número positivo: '))
         if num < 0:
