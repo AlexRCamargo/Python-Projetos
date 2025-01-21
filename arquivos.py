@@ -6,16 +6,16 @@ manipulador = open('arquivo.txt', 'r', encoding='utf-8') # Objeto
 # print(manipulador.read())
 
 # print(f'\nMétodo readline():\n')
-# print(manipulador.readline())
-# print(manipulador.readline())
+# print(manipulador.readline()) # Retorna a primeira linha do texto
+# print(manipulador.readline()) # Retorna a segunda linha do texto
 
-print(f'\nMétodo readlines():\n')
-print(manipulador.readlines())
+# print(f'\nMétodo readlines():\n')
+# print(manipulador.readlines())
 texto = input('Qual texto deseja procurar no arquivo? ')
 try:
     manipulador = open('arquivo.txt', 'r', encoding='utf-8') # Objeto
     for linha in manipulador:
-        linha = linha.rstrip()
+        linha = linha.rstrip() # Retira o último caractere da linha (\n)
         if texto in linha:
             print(f'A string foi encontrada!')
             print(linha)
@@ -24,13 +24,13 @@ try:
 except IOError:
     print(f'Não foi possivel abrir o arquivo') 
 else:
-    manipulador.close()
+    manipulador.close() # Importante sempre fechar o arquivo ao final da utilização da rotina
 
 # Escrever em arquivos de texto
 
 texto = '\nPython é usado em Ciência de Dados extensivamente.'
 try:
-    manipulador = open('arquivo.txt', 'w', encoding='utf-8')
+    manipulador = open('arquivo.txt', 'a', encoding='utf-8')
     manipulador.write(texto)
 except IOError:
     print(f'Não foi possivel abrir o arquivo') 
