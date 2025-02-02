@@ -1,5 +1,5 @@
 # Faça um programa que receba o projeto do etanol e o preço da gasolina e escrever na tela qual o mais vantajoso abastecer. 
-# Lembrando que somente é mais vantajoso abastecer com etanol quando o valor é 70 % menor que o valor da gaolina. USE FUNÇÃO.
+# Lembrando que somente é mais vantajoso abastecer com etanol quando o valor é 70 % menor que o valor da gasolina. USE FUNÇÃO.
 
 def calculo (e,g):
     vantagem = e/g
