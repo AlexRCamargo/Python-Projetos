@@ -11,9 +11,8 @@ print('A média final é: ',media)
 
 # verificação se o aluno está aprovado, reprovado ou de exame
 if(media>=7):
-    print('Resultado: Aprovado.')
-    print('Parabéns!!!')
-elif(media<5):
+    print('Resultado: Aprovado. Parabéns!!!')
+    elif(media<5):
     print('Você está Reprovado!')
 else:
     print('Você está de Recuperação.')
