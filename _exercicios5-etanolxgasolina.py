@@ -3,7 +3,7 @@
 
 def calculo (e,g):
     vantagem = e/g
-    if(vantagem<=0.7):
+    if(vantagem <= 0.7):
         return(f'Pode abastecer com Etanol')
     else:
         return(f'Pode abastecer com Gasolina')
