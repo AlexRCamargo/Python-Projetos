@@ -19,10 +19,10 @@ media = (n1 + n2 + n3 + n4) / 4
 print('A média final é: ',media)
 
 # verificação se o aluno está aprovado, reprovado ou de exame
-if(media>=7):
+if(media >= 7):
 
     print('Resultado: Aprovado. Parabéns!!!')
-elif(media<5):
+elif(media < 5):
     print('Você está Reprovado!')
 else:
     print('Você está de Recuperação. Comece a estudar já! Boa sorte!!!')
