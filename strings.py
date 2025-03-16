@@ -1,21 +1,21 @@
-# nome = 'Alexsander'
-# letra = nome[5]
-# print(letra)
-# print(len(nome))
+nome = 'Alexsander'
+letra = nome[5]
+print(letra)
+print(len(nome))
 
 # nome = 'Curso de Python'
 # instrutor = 'Alexsander'
 # print(nome + ' com ' + instrutor)
 
 frase = 'Vamos aprender Python hoje.'
-# palavras = frase.split()
-# print(palavras)
-# print(palavras[1])
-# for palavra in palavras:
-#     print(palavra)
-# for letra in frase:
-#     print(letra)
-# print(frase[0:5])
+palavras = frase.split()
+print(palavras)
+print(palavras[1])
+for palavra in palavras:
+    print(palavra)
+for letra in frase:
+    print(letra)
+print(frase[0:5])
 
 # email = input('Digite o seu email: ')
 # arroba = email.find('@')

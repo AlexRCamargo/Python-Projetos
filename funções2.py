@@ -1,11 +1,11 @@
-# def contar(num = 11, caractere = '+'): # Código atribuido dentro da lista de argumentos
-#     for i in range(1, num):
-#         print(caractere)
+def contar(num = 11, caractere = '+'): # Código atribuido dentro da lista de argumentos
+    for i in range(1, num):
+        print(caractere)
     
-# if __name__ == '__main__':
-#     contar(num = 6, caractere = '=') # Código pode ser representado pelas duas opções
-#     contar(3, '¨')
-#     contar('#', 7) # Para caso de inversão de parâmetro ficando fora de ordem, esse modo ocorrerá erro
+if __name__ == '__main__':
+    contar(num = 6, caractere = '=') # Código pode ser representado pelas duas opções
+    contar(3, '¨')
+    contar('#', 7) # Para caso de inversão de parâmetro ficando fora de ordem, esse modo ocorrerá erro
 
 x = 5
 y = 6
