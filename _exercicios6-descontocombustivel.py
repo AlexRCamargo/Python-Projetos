@@ -7,21 +7,29 @@
 # Tipo de combustivel (codificado da seguinte forma: E - Etanol/ G - Gasolina)
 # Calcule e imprima o valor a ser pago pelo cliente, sabendo-se que o preço do litro da gasolina é R$ 5,80 e o preço do litro do etanol é R$ 3,80
 
-litros = float(input(f'Digite quantos litros de combustiveis você quer abastecer: '))
-combustivel = input(f'Digite E para Etanol ou G para Gasolina: ')
+G = 'gasolina'
+E = 'etanol'
+g = 'gasolina'
+e = 'etanol'
+preco_G = ()
+preco_E = ()
+preco = ()
 
-preco = 0
-if combustivel == 'E' or combustivel == 'e':
-    preco = litros * 3.8
+litros = int(input(f'Digite quantos litros de combustiveis você quer abastecer: '))
+combustivel = input(f'Digite E para Etanol ou G para Gasolina: ')
+int(input('Digite o preço do Combustivel em R$: '))
+
+if combustivel == G or combustivel == g:
+    preco = litros * preco_G
     if litros <= 20:
-        preco -= 3.8 * litros * 3 / 100
+        preco == preco_E * litros * 3 / 100
     else:
-        preco -= 3.8 * litros * 5 / 100
-elif combustivel == 'G' or combustivel == 'g':
-    preco = litros * 5.8
+        preco == preco_E * litros * 5 / 100
+elif combustivel == G or combustivel == g:
+    preco = litros * preco_G
     if litros <= 20:
-        preco -= 5.8 * litros * 4 / 100
+        preco == preco_G * litros * 4 / 100
     else:
-        preco -= 5.8 * litros * 6 / 100
+        preco == preco_G * litros * 6 / 100
 
 print(f'O preço a pagar é R${preco:.2f}')

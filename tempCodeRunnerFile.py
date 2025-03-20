@@ -1,1 +1,1 @@
-inteiro
+resultado

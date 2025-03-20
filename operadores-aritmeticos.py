@@ -1,4 +1,4 @@
-x = y = z = 0
+x = y = 0
 
 x = int(input('Digite um número: '))
 y = int(input('Digite outro número: '))

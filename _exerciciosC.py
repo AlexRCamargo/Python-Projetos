@@ -1,3 +1,5 @@
+# Manipulação de strings
+
 # Escreva um programa que receba uma frase do usuário e conte quantas palavras ela possui. Em seguida, inverta a ordem das palavras na frase.
 
 frase = input('Digite uma frase qualquer: ')
