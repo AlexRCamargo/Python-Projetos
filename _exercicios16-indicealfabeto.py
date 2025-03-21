@@ -12,10 +12,10 @@ def indice_do_alfabeto(indice):
 print(indice_do_alfabeto(1))
 # output: "A"
 
-print(indice_do_alfabeto(3))
+# print(indice_do_alfabeto(3))
 # output: "C"
 
-print(indice_do_alfabeto(30))
+# print(indice_do_alfabeto(30))
 # output: ""
 
 # Na função indice_do_alfabeto(), criamos uma string chamada alfabeto, que contém todas as letras maiúsculas do alfabeto. 
