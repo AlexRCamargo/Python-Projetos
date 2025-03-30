@@ -1,1 +1,1 @@
-resultado
+if combustivel == G or combustivel == g:

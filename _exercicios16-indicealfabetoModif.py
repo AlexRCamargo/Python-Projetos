@@ -2,6 +2,8 @@
 # Por exemplo, o índice 1 deve retornar a letra "A", o índice 2 deve retornar a letra "B" e assim por diante. 
 # Caso o índice esteja acima ou abaixo dos limites do alfabeto, a função deve retornar um string vazio.
 
+indice = int(input('Digite um número para encontrar sua letra correspondente: '))
+
 def indice_do_alfabeto(indice):
     alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     if 1 <= indice <= 26:
@@ -9,13 +11,13 @@ def indice_do_alfabeto(indice):
     else:
         return ''
 
-print(indice_do_alfabeto(1))
+print(indice_do_alfabeto(indice))
 # output: "A"
 
-print(indice_do_alfabeto(3))
+# print(indice_do_alfabeto(15))
 # output: "C"
 
-print(indice_do_alfabeto(30))
+# print(indice_do_alfabeto(30))
 # output: ""
 
 # Na função indice_do_alfabeto(), criamos uma string chamada alfabeto, que contém todas as letras maiúsculas do alfabeto. 
