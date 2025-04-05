@@ -3,7 +3,7 @@
 numeros = [90, 85, 70, 60, 45, 35, 20, 10, 5]
 
 numeros.sort()                                             # Nessa solução, utilizamos o método .sort() para ordenar a lista numeros em ordem crescente. 
-segundo_maior = numeros[-2]                                 # Uma vez feita essa ação, podemos encontrar o segundo maior elemento realizando uma indexação na lista. 
+segundo_maior = numeros[-2]                                # Uma vez feita essa ação, podemos encontrar o segundo maior elemento realizando uma indexação na lista. 
 ultimo_maior = numeros[-9]
 
 print('O segundo maior valor da Lista é:', segundo_maior)

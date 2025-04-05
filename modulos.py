@@ -16,10 +16,10 @@ if __name__ == '__main__':
 
     num = int(input('Digite um número inteiro: '))
 
-    print(f'\nCalcular o fatorial do número:')
+    print(f'\nCalcular o fatorial do número {num}:')
     fat = mf.fatorial(num)
     print(f'O fatorial é {fat}')
 
-    print(f'\nCalcular sequencia de Fibonacci:')
+    print(f'\nCalcular sequencia de Fibonacci do número {num}:')
     fib = mf.fibo(num)
     print(f'A sequencia é {fib}')

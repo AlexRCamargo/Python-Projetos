@@ -3,11 +3,11 @@
 # def <nome_da_função> ([argumentos]):
 #     <instruções>
 
-# def mensagem():
-#     print('ARC Cloud Computing')
-#     print('Se Deus quiser vai dar tudo certo. não desista. se esforçe')
+def mensagem():
+    print('ARC Cloud Computing')
+    print('Se Deus quiser vai dar tudo certo. não desista. se esforçe')
 
-# mensagem()
+mensagem()
 
 # Funções com argumentos
 def soma(a, b):

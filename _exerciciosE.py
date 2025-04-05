@@ -6,7 +6,7 @@
 # Meia Idade para 41 até 60 anos;
 # Idoso acima de 60 anos.
 
-idade = int (input('Digite sua idade: '))
+idade = int(input('Digite sua idade: '))
 
 if idade >= 0 and idade <= 11:
     print('Criança')
@@ -14,14 +14,14 @@ if idade >= 0 and idade <= 11:
 elif idade >= 12 and idade <= 18:
     print('Adolescente')
 
-elif idade >= 19 and idade <= 24:
+elif idade >= 19 and idade <= 27:
     print('Jovem')
 
-elif idade >= 25 and idade <= 40:
+elif idade >= 28 and idade <= 49:
     print('Adulto')
 
-elif idade >= 41 and idade <= 60:
+elif idade >= 50 and idade <= 64:
     print('Meia Idade')
 
-elif idade > 60:
+elif idade > 65:
     print('Idoso')

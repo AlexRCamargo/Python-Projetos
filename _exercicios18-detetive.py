@@ -34,7 +34,7 @@ b = input('b. Esteve no local do crime? ')
 c = input('c. Mora perto da vítima? ')
 
 
-d = input('d. Devia para a vítima?')
+d = input('d. Devia para a vítima? ')
 
 
 e = input('e. Já trabalhou com a vítima? ')

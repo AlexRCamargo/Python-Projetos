@@ -1,1 +1,1 @@
-if combustivel == G or combustivel == g:
+else

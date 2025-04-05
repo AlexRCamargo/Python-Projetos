@@ -17,13 +17,13 @@ for letra in frase:
     print(letra)
 print(frase[0:5])
 
-# email = input('Digite o seu email: ')
-# arroba = email.find('@')
-# print(arroba)
-# usuario = email[0:arroba]
-# dominio = email[arroba+1:]
-# print(usuario)
-# print(dominio)
+email = input('Digite o seu email: ')
+arroba = email.find('@')
+print(arroba)
+usuario = email[0:arroba]
+dominio = email[arroba+1:]
+print(usuario)
+print(dominio)
 
 # produtos = 'Carbonato de sódio e óxido de zinco'
 # print('sódio' in produtos)
@@ -46,11 +46,11 @@ print(frase[0:5])
 # print(suplemento)
 # print(n_suplemento)
 
-# frase = '       Ômega 3 é bom para a saúde!   '
-# print(frase)
-# print(frase.lstrip())
-# print(frase.rstrip())
-# print(frase.strip())
+frase = '       Ômega 3 é bom para a saúde!   '
+print(frase)
+print(frase.lstrip())
+print(frase.rstrip())
+print(frase.strip())
 
 # fruta = 'Abacate'
 # print(fruta)
