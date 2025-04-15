@@ -10,13 +10,6 @@ print(quadrados)
 pares = [num for num in range(11) if num % 2 == 0]
 print(pares)
 
-frase = 'A lógica é apenas o principio da sabedoria, e  não o seu fim.'
-vogais = ['a', 'e', 'i', 'o', 'u', 'á', 'é', 'í', 'ó', 'ú']
-
-listas_vogais = [vog for vog in frase if vog in vogais]
-print(f'A frase possui {len(listas_vogais)} vogais:')
-print(listas_vogais)
-
 # Distributiva entre valores de duas listas
 distributiva = [k * m for k in [2,3,5] for m in [10,20,30]]
 print(distributiva)

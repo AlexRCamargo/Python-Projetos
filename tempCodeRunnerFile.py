@@ -1,1 +1,1 @@
-else
+# Função len indica quantos elementos tem dentro da lista

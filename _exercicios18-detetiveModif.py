@@ -8,6 +8,8 @@
 # Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". 
 # Caso contrário, ele será classificado como "Inocente". 
 
+import csv
+
 def fazer_perguntas():
     perguntas = [
         'Telefonou para a vítima?',
@@ -29,7 +31,7 @@ def fazer_perguntas():
                     respostas_positivas += 1
                 break
             else:
-                print('Resposta inválida. Digite apenas "S" para SIM ou "N" para NÃO.')
+                print('Resposta inválida. Digite apenas "S" ou "N".')
     
     return respostas_positivas
 
@@ -43,14 +45,37 @@ def classificar(respostas_positivas):
     else:
         return 'Inocente'
 
+def salvar_resultados(nome_arquivo, resultados):
+    with open(nome_arquivo, mode='w', newline='', encoding='utf-8') as arquivo:
+        escritor = csv.writer(arquivo)
+        escritor.writerow(['Jogador', 'Classificação'])
+        for jogador, classificacao in resultados:
+            escritor.writerow([jogador, classificacao])
+    print(f'\n📄 Resultados salvos em "{nome_arquivo}".')
+
+def mostrar_ranking(resultados):
+    print('\n=== RANKING FINAL ===')
+    for jogador, classificacao in resultados:
+        print(f'{jogador}: {classificacao}')
+
 def main():
+    resultados = []
     print('=== Questionário de Investigação Criminal ===')
-    jogador = input('Digite o nome do jogador: ').strip()
 
-    respostas_positivas = fazer_perguntas()
-    resultado = classificar(respostas_positivas)
+    while True:
+        jogador = input('\nDigite o nome do jogador (ou "fim" para encerrar): ').strip()
+        if jogador.lower() == 'fim':
+            break
+        respostas_positivas = fazer_perguntas()
+        classificacao = classificar(respostas_positivas)
+        resultados.append((jogador, classificacao))
+        print(f'\nO jogador {jogador} foi classificado como: {classificacao}.')
 
-    print(f'\nO jogador {jogador} foi classificado como: {resultado}.')
+    if resultados:
+        salvar_resultados('resultados_investigacao.csv', resultados)
+        mostrar_ranking(resultados)
+    else:
+        print('\nNenhum jogador participou.')
 
 if __name__ == '__main__':
     main()

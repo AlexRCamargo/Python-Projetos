@@ -1,13 +1,13 @@
 OPERACOES = {
-    'Soma': lambda n1, n2: n1 + n2, # Função Lambda são funções que não possuem nome e devem ser criadas e usadas no mesmo momento. 
+    'Soma': lambda n1, n2: n1 + n2,                                     # Função Lambda são funções que não possuem nome e devem ser criadas e usadas no mesmo momento. 
     'Subtração': lambda n1, n2: n1 - n2,
     'Multiplicação': lambda n1, n2: n1 * n2,
     'Divisão': lambda n1, n2: n1 / n2,
     'potência': lambda n1, n2: n1 ** n2,
 }
-nome_operacao = lambda operacao: list(OPERACOES.keys())[operacao - 1] # São funções que não possuem nome e devem ser criadas e usadas no mesmo momento. 
-lista_operacoes = list(OPERACOES.keys()) # retornar uma lista com todas as chaves do dicionário
-total_operacoes = len(OPERACOES) + 1 # Função len indica quantos elementos tem dentro da lista
+nome_operacao = lambda operacao: list(OPERACOES.keys())[operacao - 1]   # São funções que não possuem nome e devem ser criadas e usadas no mesmo momento. 
+lista_operacoes = list(OPERACOES.keys())                                # retornar uma lista com todas as chaves do dicionário
+total_operacoes = len(OPERACOES) + 1                                    # Função len indica quantos elementos tem dentro da lista
 
 
 def mensagem_operacoes():

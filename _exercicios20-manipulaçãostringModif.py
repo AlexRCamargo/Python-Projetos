@@ -1,14 +1,20 @@
 # Manipulação de strings
 
-# Escreva um programa que receba uma frase do usuário e conte quantas palavras ela possui. 
+# Escreva um programa que receba uma frase do usuário e conte quantas palavras ela possui. Em seguida, inverta a ordem das palavras na frase.
 
-frase = input('Digite uma frase qualquer: ')
+frase = input('Digite uma frase qualquer: ')                        # Solicita ao usuário que digite uma frase
 
-palavras = frase.split(' ') # Metodo .split separa uma string em uma lista
+palavras = frase.split()                                            # Divide a frase em palavras utilizando espaço como separador
 
-total_palavras = len(palavras) # Função len indica quantos elementos tem dentro da lista
+total_palavras = len(palavras)                                      # Conta o número de palavras
 
-print(f'O texto digitado possui {total_palavras} palavras.')
+print(f'O texto digitado possui {total_palavras} palavras.')        # Exibe o número de palavras
+
+palavras_invertidas = palavras[::-1]                                # Inverte a ordem das palavras
+
+frase_invertida = ' '.join(palavras_invertidas)                     # Junta novamente as palavras invertidas em uma string
+
+print(f'A frase com as palavras invertidas é: {frase_invertida}')   # Exibe a frase com a ordem das palavras invertida
 
 # Passo 1: Preparar o Texto de Exemplo
 # Primeiro, precisamos de uma frase ou um texto para trabalhar. Você pode usar qualquer texto, mas para este exemplo, vamos usar uma frase simples:
