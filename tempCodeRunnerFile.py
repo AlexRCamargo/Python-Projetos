@@ -1,1 +1,1 @@
-# Função len indica quantos elementos tem dentro da lista
+aluno = input('Digite o nome do Aluno: ')

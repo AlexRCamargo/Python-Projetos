@@ -1,5 +1,7 @@
 # Seu objetivo é encontrar quem gastou mais dinheiro ao longo do mês, João ou Pedro. Para isso, crie um código em Python que responda a essa pergunta.
 
+   # Por fim, o código exibe o resultado da comparação.
+
 gastos_joao = [300, 400, 200, 800]
 gastos_pedro = [200, 400, 500, 700]
 
@@ -11,4 +13,4 @@ if total_gastos_joao > total_gastos_pedro:                      # Em seguida, co
 elif total_gastos_pedro > total_gastos_joao:
     print("Pedro gastou mais dinheiro este mês.")
 else:
-    print("João e Pedro gastaram a mesma quantia este mês.")    # Por fim, o código exibe o resultado da comparação.
+    print("João e Pedro gastaram a mesma quantia este mês.") 
